@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests;
+namespace Tests\Support;
 
-use MilesChou\Template\Sample;
+use OpenIDConnect\Support\Sample;
 use PHPUnit\Framework\TestCase;
 
 class SampleTest extends TestCase

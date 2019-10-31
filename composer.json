@@ -1,15 +1,13 @@
 {
-    "name": "mileschou/composer-template",
-    "description": "The template for create Composer project",
+    "name": "oidc/support",
+    "description": "The common support libraries for OpenID Connect packages.",
     "type": "library",
     "license": "MIT",
-    "keywords": [
-        "template"
-    ],
     "authors": [
         {
             "name": "MilesChou",
-            "email": "jangconan@gmail.com"
+            "email": "jangconan@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -19,11 +17,11 @@
         "php-coveralls/php-coveralls": "^2.1",
         "phpstan/phpstan": "^0.11.8",
         "phpunit/phpunit": "^6 | ^7 | ^8",
-        "squizlabs/php_codesniffer": "^3.4"
+        "squizlabs/php_codesniffer": "^3.5"
     },
     "autoload": {
         "psr-4": {
-            "MilesChou\\Template\\": "src"
+            "OpenIDConnect\\Support\\": "src/Support"
         }
     },
     "autoload-dev": {
