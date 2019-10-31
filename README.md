@@ -9,7 +9,7 @@
 The common support libraries for OpenID Connect packages.
 
 [license-svg]: https://img.shields.io/badge/license-MIT-brightgreen.svg
-[license-link]: /LICENSE
+[license-link]: https://github.com/oidcphp/support/blob/master/LICENSE
 [travis-svg]: https://travis-ci.com/oidcphp/support.svg?branch=master
 [travis-link]: https://travis-ci.com/oidcphp/support
 [coveralls-svg]: https://coveralls.io/repos/github/oidcphp/support/badge.svg?branch=master
