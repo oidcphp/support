@@ -16,9 +16,11 @@
     "require": {
         "php": ">=7.1",
         "psr/container": "^1.0",
-        "psr/container-implementation": "1.0.0"
+        "psr/container-implementation": "1.0.0",
+        "psr/http-client": "^1.0"
     },
     "require-dev": {
+        "guzzlehttp/guzzle": "^6.4",
         "php-coveralls/php-coveralls": "^2.1",
         "phpstan/phpstan": "^0.11.8",
         "phpunit/phpunit": "^7 | ^8",
