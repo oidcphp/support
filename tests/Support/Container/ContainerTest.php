@@ -1,11 +1,8 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace Tests\Support\Container;
 
 use OpenIDConnect\Support\Container\Container;
-use OpenIDConnect\Support\Http\Query;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\NotFoundExceptionInterface;
 
