@@ -1,0 +1,50 @@
+name: Testing
+
+on: [push]
+
+jobs:
+  php71:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: MilesChou/composer-action/7.1/install@master
+      - uses: docker://php:7.1-alpine
+        with:
+          args: php vendor/bin/phpcs
+      - uses: docker://php:7.1-alpine
+        with:
+          args: php vendor/bin/phpunit
+      - uses: docker://php:7.1-alpine
+        with:
+          args: php vendor/bin/phpstan analyse src --level=max
+
+
+  php72:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: MilesChou/composer-action/7.2/install@master
+      - uses: docker://php:7.2-alpine
+        with:
+          args: php vendor/bin/phpcs
+      - uses: docker://php:7.2-alpine
+        with:
+          args: php vendor/bin/phpunit
+      - uses: docker://php:7.2-alpine
+        with:
+          args: php vendor/bin/phpstan analyse src --level=max
+
+  php73:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: MilesChou/composer-action/7.3/install@master
+      - uses: docker://php:7.3-alpine
+        with:
+          args: php vendor/bin/phpcs
+      - uses: docker://php:7.3-alpine
+        with:
+          args: php vendor/bin/phpunit
+      - uses: docker://php:7.3-alpine
+        with:
+          args: php vendor/bin/phpstan analyse src --level=max
