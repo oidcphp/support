@@ -27,31 +27,31 @@ class Container implements ContainerInterface
     /**
      * @inheritDoc
      */
-    public function get($id)
+    public function get($identifier)
     {
-        if ($this->has($id)) {
-            return $this->instance[$id];
+        if ($this->has($identifier)) {
+            return $this->instance[$identifier];
         }
 
-        throw new EntryNotFoundException("The entry '{$id}' is not found");
+        throw new EntryNotFoundException("The entry '{$identifier}' is not found");
     }
 
     /**
      * @inheritDoc
      */
-    public function has($id)
+    public function has($identifier)
     {
-        return isset($this->instance[$id]);
+        return isset($this->instance[$identifier]);
     }
 
     /**
      * Inject instance
      *
-     * @param string $id
+     * @param string $identifier
      * @param mixed $instance
      */
-    public function set(string $id, $instance): void
+    public function set(string $identifier, $instance): void
     {
-        $this->instance[$id] = $instance;
+        $this->instance[$identifier] = $instance;
     }
 }
