@@ -14,7 +14,7 @@ class Query
     /**
      * Generate URL-encoded query string default by PHP_QUERY_RFC3986
      *
-     * @param array $params
+     * @param array<mixed> $params
      * @param int $encType
      * @return string
      */
@@ -27,7 +27,7 @@ class Query
      * Parse URL-encoded query string to PHP array
      *
      * @param string $queryString
-     * @return array
+     * @return array<mixed>
      */
     public static function parse(string $queryString): array
     {
