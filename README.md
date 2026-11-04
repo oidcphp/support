@@ -1,5 +1,9 @@
 # Support Libraries
 
+> [!WARNING]
+> This package is abandoned and will be archived. It was merged into [`oidc/core`](https://github.com/oidcphp/core) on 2020-03-22 and is no longer maintained.
+> Please use `oidc/core` instead. See oidcphp/support#1.
+
 [![License][license-svg]][license-link]
 [![Build Status][travis-svg]][travis-link]
 [![Coverage Status][coverage-svg]][coverage-link]
